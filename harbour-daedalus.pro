@@ -88,9 +88,9 @@ OTHER_FILES += qml/harbour-daedalus.qml \
 
 # to disable building translations every time, comment out the
 # following CONFIG line
-CONFIG += sailfishapp_i18n
-TRANSLATIONS += translations/harbour-daedalus-de.ts \
-                translations/harbour-daedalus-ru.ts
+#CONFIG += sailfishapp_i18n
+#TRANSLATIONS += translations/harbour-daedalus-de.ts \
+#                translations/harbour-daedalus-ru.ts
 
 HEADERS += \
     src/maincontroller.h \
@@ -122,22 +122,24 @@ HEADERS += \
     src/dbus/daedalusdbusadaptor.h \
     src/dbus/daedalusdbusmainmprisadaptor.h
 
-RESOURCES += \
-    images.qrc
+#RESOURCES += \
+#    images.qrc
 
-DEFINES += QT_USE_FAST_CONCATENATION QT_USE_FAST_OPERATOR_PLUS QT_NO_DEBUG_OUTPUT
+#DEFINES += QT_USE_FAST_CONCATENATION QT_USE_FAST_OPERATOR_PLUS QT_NO_DEBUG_OUTPUT
 #DEFINES += QT_USE_FAST_CONCATENATION QT_USE_FAST_OPERATOR_PLUS
 
 
 
-INCLUDEPATH += $$PWD/libqtsparql/include/Qt5Sparql
+CONFIG += qtsparql
 
-QMAKE_RPATHDIR += /usr/share/harbour-daedalus/lib
+#INCLUDEPATH += $$PWD/libqtsparql/include/Qt5Sparql
 
-LIBS += -L$$PWD/libqtsparql/lib/ -lQt5Sparql
+#QMAKE_RPATHDIR += /usr/share/harbour-daedalus/lib
 
-lib.files += libqtsparql/lib/libQt5Sparql.so.0 \
-        libqtsparql/lib/sparqldrivers
+#LIBS += -L$$PWD/libqtsparql/lib/ -lQt5Sparql
 
-lib.path = /usr/share/harbour-daedalus/lib
-INSTALLS += lib
+#lib.files += libqtsparql/lib/libQt5Sparql.so.0 \
+#        libqtsparql/lib/sparqldrivers
+
+#lib.path = /usr/share/harbour-daedalus/lib
+#INSTALLS += lib

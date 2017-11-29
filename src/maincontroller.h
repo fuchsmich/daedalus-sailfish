@@ -7,7 +7,7 @@
 #include <QtQml>
 #include <QQmlEngine>
 #include <QThread>
-#include <Qt5Sparql/QSparqlConnection>
+#include <QtSparql>
 
 
 // local includes

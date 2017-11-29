@@ -2,7 +2,7 @@
 #define ALBUMSMODEL_H
 
 #include <QObject>
-#include <Qt5Sparql/QSparqlQueryModel>
+#include <QtSparql>
 #include <QThread>
 
 #include <global.h>

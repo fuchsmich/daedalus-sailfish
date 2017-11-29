@@ -337,10 +337,6 @@
         <translation>Die Wiedergabeliste wird unter $XDG_MUSIC_DIR gespeichert, was vermutlich in ihr Musikverzeichnis zeigt.</translation>
     </message>
     <message>
-        <source>playlist will be saved under $XDG_MUSIC_DIR which probably is /home/nemo/Music</source>
-        <translation type="vanished">Die Wiedergabeliste wird unter $XDG_MUSIC_DIR abgespeichert, was vorraussichtlich auf /home/nemo/Music zeigt</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/CurrentPlaylistPage.qml" line="327"/>
         <source>enter url:</source>
         <translation>URL eingeben:</translation>
@@ -546,10 +542,6 @@
         <source>download albums</source>
         <translation>Alben herunterladen</translation>
     </message>
-    <message>
-        <source>This will download metadata information for all your albums in your MPD database. This action will run in the background but take some time.</source>
-        <translation type="vanished">Dies lädt alle Album-Bilder herunter und benötigt einige Zeit. Dies geschieht im Hintergrund.</translation>
-    </message>
 </context>
 <context>
     <name>GUISettings</name>
@@ -704,13 +696,6 @@
     </message>
 </context>
 <context>
-    <name>SavedPlaylistTracksModel</name>
-    <message>
-        <source>Undefined</source>
-        <translation type="vanished">nicht definiert</translation>
-    </message>
-</context>
-<context>
     <name>SavedPlaylistsPage</name>
     <message>
         <location filename="../qml/pages/SavedPlaylistsPage.qml" line="21"/>
@@ -805,10 +790,6 @@
         <location filename="../qml/pages/settings/SettingsPage.qml" line="16"/>
         <source>settings</source>
         <translation>Einstellungen</translation>
-    </message>
-    <message>
-        <source>database settings</source>
-        <translation type="vanished">Metadaten-Einstellungen</translation>
     </message>
     <message>
         <location filename="../qml/pages/settings/SettingsPage.qml" line="38"/>

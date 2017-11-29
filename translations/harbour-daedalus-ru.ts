@@ -542,10 +542,6 @@
         <source>download albums</source>
         <translation>скачать альбомы</translation>
     </message>
-    <message>
-        <source>This will download metadata information for all your albums in your MPD database. This action will run in the background but take some time.</source>
-        <translation type="vanished">Это приведет к скачиванию метаданные для всех ваших альбомов в вашей базе данных MPD. Это действие будет работать в фоновом режиме, но займет некоторое время.</translation>
-    </message>
 </context>
 <context>
     <name>GUISettings</name>
@@ -697,13 +693,6 @@
         <location filename="../qml/pages/PlaylistTracksPage.qml" line="194"/>
         <source>Do you really want to delete this playlist? This step is irreversible!</source>
         <translation>Вы действительно хотите удалить этот плейлист? Его будет невозможно восстановить!</translation>
-    </message>
-</context>
-<context>
-    <name>SavedPlaylistTracksModel</name>
-    <message>
-        <source>Undefined</source>
-        <translation type="vanished">Неопределенный</translation>
     </message>
 </context>
 <context>

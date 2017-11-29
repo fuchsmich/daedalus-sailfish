@@ -33,6 +33,8 @@ import Sailfish.Silica 1.0
 import "components"
 import "pages"
 
+import MainController 1.0
+
 ApplicationWindow
 {
     id: mainWindow
@@ -241,6 +243,8 @@ ApplicationWindow
             newSettingKey(["firstuse","0"]);
         }
     }
+
+//    MainController {}
 
 }
 

@@ -36,42 +36,32 @@
 
 // local includes
 #include "maincontroller.h"
-#include <QGuiApplication>
-#include <QScopedPointer>
+//#include <QGuiApplication>
+//#include <QScopedPointer>
 
 int main(int argc, char *argv[])
 {
-    // SailfishApp::main() will display "qml/template.qml", if you need more
-    // control over initialization, you can use:
-    //
-    //   - SailfishApp::application(int, char *[]) to get the QGuiApplication *
-    //   - SailfishApp::createView() to get a new QQuickView * instance
-    //   - SailfishApp::pathTo(QString) to get a QUrl to a resource file
-    //
-    // To display the view, call "show()" (will show fullscreen on device).
-    QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
-    app->setOrganizationName("harbour-daedalus");
-    app->setApplicationName("harbour-daedalus");
-
     // Load translation
-    QString locale = QLocale::system().name();
-    QString translationFile = QString(":translations/harbour-daedalus_") + locale;
-    QTranslator translator;
-    translator.load(translationFile);
-    app->installTranslator(&translator);
+    //QString locale = QLocale::system().name();
+    //QString translationFile = QString(":translations/harbour-daedalus_") + locale;
+    //QTranslator translator;
+    //translator.load(translationFile);
+    //app->installTranslator(&translator);
 
     // needed for sparql drivers
-    app->addLibraryPath("/usr/share/harbour-daedalus/lib");
+    //app->addLibraryPath("/usr/share/harbour-daedalus/lib");
 
-    QScopedPointer<QQuickView> view(SailfishApp::createView());
+    //QScopedPointer<QQuickView> view(SailfishApp::createView());
 
-    view->engine()->addImportPath("/usr/share/harbour-daedalus/qml/");
-    view->setSource(SailfishApp::pathTo("qml/harbour-daedalus.qml"));
+    //view->engine()->addImportPath("/usr/share/harbour-daedalus/qml/");
+    //view->setSource(SailfishApp::pathTo("qml/harbour-daedalus.qml"));
 
-    MainController controller(&(*view));
-    view->show();
-    return app->exec();
+    //MainController controller(&(*view));
+    //view->show();
+    //return app->exec();
 
-    //return SailfishApp::main(argc, argv);
+    qmlRegisterType<MainController>("MainController", 1, 0, "MainController");
+
+    return SailfishApp::main(argc, argv);
 }
 

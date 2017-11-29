@@ -2,7 +2,7 @@
 #define ARTISTSMODEL_H
 
 #include <QAbstractListModel>
-#include <Qt5Sparql/QSparqlQueryModel>
+#include <QtSparql>
 #include <QThread>
 
 #include <metadata/imagedatabase.h>

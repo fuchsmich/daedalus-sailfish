@@ -2,7 +2,7 @@
 #define SAVEDPLAYLISTSMODEL_H
 
 #include <QAbstractListModel>
-#include <Qt5Sparql/QSparqlQueryModel>
+#include <QtSparql>
 
 
 class SavedPlaylistsModel : public QAbstractListModel
