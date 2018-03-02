@@ -29,6 +29,7 @@ BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(Qt5Multimedia)
 BuildRequires:  pkgconfig(Qt5Sparql)
+BuildRequires:  pkgconfig(Qt5Dbus)
 BuildRequires:  desktop-file-utils
 
 %description
