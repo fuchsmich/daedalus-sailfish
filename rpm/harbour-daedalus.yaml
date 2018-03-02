@@ -27,7 +27,7 @@ PkgConfigBR:
   - Qt5Quick
   - Qt5Multimedia
   - Qt5Sparql
-  - Qt5Dbus
+  - Qt5DBus
 
 # Build dependencies without a pkgconfig setup can be listed here
 # PkgBR:
